@@ -8,12 +8,13 @@ body {
     align-items: center;
     height: 100vh;
     position: relative;
+    overflow: hidden; /* Para evitar rolagem */
 }
 
 .center-content {
     text-align: center;
     position: relative;
-    z-index: 1;
+    margin-bottom: 120px; /* Ajuste para garantir espaço suficiente para ícones */
 }
 
 .center-content h1 {
@@ -59,4 +60,25 @@ body {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .center-content h1 {
+        font-size: 2em;
+    }
+
+    .profile-box {
+        max-width: 250px;
+    }
+
+    .social-icons {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
 }
