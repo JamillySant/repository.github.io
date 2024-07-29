@@ -14,7 +14,7 @@ body {
 .center-content {
     text-align: center;
     position: relative;
-    margin-bottom: 80px; /* Ajuste para garantir espaço suficiente para os ícones */
+    margin-bottom: 100px; /* Ajuste para garantir espaço suficiente para os ícones */
 }
 
 .center-content h1 {
@@ -66,12 +66,11 @@ body {
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre os ícones */
+    gap: 20px; /* Espaçamento entre os ícones */
 }
 
 .social-icons a {
     text-decoration: none;
-    color: #333;
 }
 
 .social-icons img {
@@ -91,9 +90,7 @@ body {
 
     .social-icons {
         bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        gap: 8px;
+        gap: 10px;
     }
 
     .social-icons img {
