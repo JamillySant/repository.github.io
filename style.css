@@ -1,24 +1,27 @@
+/* Estilos gerais */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-.center-content {
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 40px 0;
     text-align: center;
-    margin-top: 20px;
 }
 
-.center-content h1 {
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .profile-box {
@@ -26,10 +29,11 @@ body {
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
     margin: 20px auto;
     position: relative;
+    text-align: center;
 }
 
 .profile-box img {
@@ -37,17 +41,15 @@ body {
     border-radius: 10px;
 }
 
-.profile-box .description {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #333;
+.description {
+    margin-top: 15px;
 }
 
 .social-icons {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .social-icons a {
@@ -55,22 +57,45 @@ body {
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+}
+
+/* Estilos do conteúdo principal */
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .portfolio-section {
-    max-width: 800px;
-    padding: 20px;
     background-color: #fff;
     border: 2px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 .portfolio-section h2 {
     margin-top: 0;
+    font-size: 2em;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    color: #007BFF;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 .project {
@@ -87,13 +112,6 @@ body {
 }
 
 .contact-section {
-    max-width: 800px;
-    padding: 20px;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
     text-align: center;
 }
 
@@ -115,29 +133,30 @@ body {
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
-    .center-content h1 {
-        font-size: 2em;
+    .header h1 {
+        font-size: 2.5em;
     }
 
     .profile-box {
-        max-width: 250px;
+        max-width: 280px;
     }
 
     .social-icons {
-        margin-top: 10px;
+        margin-top: 15px;
         gap: 10px;
     }
 
     .social-icons img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 
     .portfolio-section {
-        padding: 10px;
+        padding: 15px;
     }
 
-    .contact-section {
-        padding: 10px;
+    .email-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
     }
 }
