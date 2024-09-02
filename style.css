@@ -9,49 +9,6 @@ body {
     margin: 0;
 }
 
-/* Estilos para telas grandes (desktops) */
-.content {
-    display: flex;
-    height: 100vh;
-}
-
-.image-container, .text-container {
-    flex: 1;
-}
-
-.img_home {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
-/* Media Query para dispositivos móveis */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column; /* Alinha os itens verticalmente em dispositivos móveis */
-        height: auto; /* Permite o conteúdo se ajustar à altura da tela */
-    }
-
-    .img_home {
-        max-width: 100%; /* Faz a imagem ocupar a largura total da tela no celular */
-    }
-
-    .nav {
-        flex-direction: column; /* Torna o menu de navegação vertical */
-        align-items: center;
-    }
-
-    .nav .a {
-        margin-right: 0;
-        padding: 10px; /* Ajusta o espaçamento para telas menores */
-    }
-
-    .principal {
-        margin-right: 0; /* Ajusta o título para centralizar em telas pequenas */
-    }
-}
-
-
 .nav {
     background-color: #425182;
     padding: 0px;
