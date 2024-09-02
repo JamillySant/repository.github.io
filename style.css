@@ -1,175 +1,86 @@
-/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
+    background: #fbf3f3;
     margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    overflow-x: hidden; /* Permite rolar horizontalmente apenas se necessário */
 }
 
-.header {
-    background-color: #007BFF;
+.nav {
+    background-color: #425182;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end; /* Move os itens de navegação para a direita */
+    align-items: center;
+}
+
+.nav .a {
     color: white;
-    padding: 40px 20px; /* Ajustado para garantir espaçamento adequado em dispositivos móveis */
-    text-align: center;
-}
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 3em;
-}
-
-.profile-box {
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    margin: 20px auto;
-    position: relative;
-    text-align: center;
-}
-
-.profile-box img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.description {
-    margin-top: 15px;
-}
-
-.social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-icons a {
     text-decoration: none;
-}
-
-.social-icons img {
-    width: 35px;
-    height: 35px;
-}
-
-/* Estilos do conteúdo principal */
-.main-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-right: 70px;
 }
 
-.content-wrapper {
+.nav .a:hover {
+    background-color: #895b9a;
+}
+
+.principal {
+    color: white;
+    margin-right: 450px; /* Move o título "Portifólio LIM" para a esquerda */
+}
+
+
+.content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    justify-content: flex-start;
+    height: 100vh; /* Faz o conteúdo ocupar a altura total da página */
 }
 
-.portfolio-section {
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+.image-container {
     flex: 1;
-    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza a imagem */
 }
 
-.portfolio-section h2 {
-    margin-top: 0;
-    font-size: 2em;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 10px;
-    color: #007BFF;
+.img_home {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
-.skills ul {
-    list-style: none;
-    padding: 0;
+.text-container {
+    flex: 1;
+    background-color: #e0bbff; /* Cor de fundo para metade da página */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o texto verticalmente */
+    align-items: center;
+    padding: 20px;
 }
 
-.skills li {
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-.project a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-.contact-section {
+.text {
+    font-size: 22px;
+    color: #445283;
     text-align: center;
+    max-width: 600px;
 }
 
-.email-button {
+.btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
+    padding: 15px 30px;
+    font-size: 18px;
     color: white;
+    background-color: #895b9a;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 30px;
 }
 
-.email-button:hover {
-    background-color: #0056b3;
-}
-
-/* Ajustes para dispositivos móveis */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2.5em;
-    }
-
-    .profile-box {
-        max-width: 280px;
-    }
-
-    .social-icons {
-        margin-top: 15px;
-        gap: 10px;
-    }
-
-    .social-icons img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .portfolio-section {
-        padding: 15px;
-    }
-
-    .email-button {
-        padding: 8px 16px;
-        font-size: 0.9em;
-    }
+.btn:hover {
+    background-color: #7a4b82;
 }
