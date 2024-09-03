@@ -34,19 +34,26 @@ body {
 }
 
 .text-container {
-    flex: 1;
-    background-color: #e0bbff; /* Cor de fundo para metade da página */
     display: flex;
-    flex-direction: column;
-    justify-content: right; /* Centraliza o texto verticalmente */
-    align-items: right;
-    padding: 50px;
-	
+    background-color: #e0bbff;
+    padding: 48px;
+	margin-left: 10px;//
 }
 
 .text {
+    flex: 1;
     font-size: 18px;
     color: #556098;
     text-align: justify;
-    max-width: 600px;	
+    max-width: 600px;
+	margin-left: 120px;//
+}
+
+.image {
+    width: 550px; /* Tamanho da imagem */
+    height: 550px;
+    margin-left: 100px; /* Espaçamento entre o texto e a imagem */
+	margin-top: 5px;
+	border: 50px;
+	color: white;
 }
