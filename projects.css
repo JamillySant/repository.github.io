@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: #fbf3f3;
+    margin: 0;
+}
+
+.nav {
+    background-color: #425182;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end; /* Move os itens de navegação para a direita */
+    align-items: center;
+}
+
+.nav .a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 70px;
+}
+
+.nav .a:hover {
+    background-color: #895b9a;
+}
+
+.principal {
+    color: white;
+    margin-right: 450px; /* Move o título "Portifólio LIM" para a esquerda */
+}
+
+.container {
+	margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #4C7D66;
+}
+
+a {
+    text-decoration: none;
+    color: #C3545F;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
