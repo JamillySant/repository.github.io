@@ -50,7 +50,7 @@ body {
 
 .item img {
     width: 100%;
-    height: auto;
+    height: 50%;
     border-radius: 8px;
 }
 
