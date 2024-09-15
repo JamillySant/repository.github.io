@@ -8,14 +8,34 @@
     <title>Home</title>
 </head>
 <body>
-    <nav class="nav">
-		<a class="principal">MY PORTFOLIO LIM</a>
-        <a class="a" href="index.html">Home</a>
-        <a class="a" href="about.html">About</a>
-        <a class="a" href="projects.html">Projects</a>
-        <a class="a" href="index_vilao.html">Certifications</a>
-    </nav>
-    
+    <div class="conteiner">
+        <div class="menu">
+            <nav>
+                <a class="a" href="index.html">Home</a>
+                <a class="a" href="about.html">About</a>
+                <a class="a" href="projects.html">Projects</a>
+                <a class="a" href="index_vilao.html">Certifications</a>
+            </nav>
+        </div>
+
+        <button onclick="animarMenu()" id="btn-menu" class="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+
+        <div class="menu-mobile" id="menu-mobile">
+            <nav>
+                <a class="a" href="index.html">Home</a>
+                <a class="a" href="about.html">About</a>
+                <a class="a" href="projects.html">Projects</a>
+                <a class="a" href="index_vilao.html">Certifications</a>
+            </nav>
+        </div>
+    </div>
+
+
     <div class="content">
         <div class="image-container">
             <img src="img/stitch.png" class="img_home" alt="Imagem do Stitch">
@@ -28,5 +48,8 @@
         </div>
     </div>
 	
+    <script src="animar.js">
+
+    </script>
 </body>
 </html>
