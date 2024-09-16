@@ -64,7 +64,6 @@ body {
     cursor: pointer;
     transition: .2s;
     display: none;
-    margin-left: 22em;
 }
 
 .linha{
