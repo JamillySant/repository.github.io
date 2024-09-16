@@ -12,12 +12,17 @@ body {
 header{
     background-color: #425182;
     width: 100%;
-    padding: 10px 4%;
+    padding: 20px 4%;
     position: sticky;
     top: 0;
     color: white; 
     padding: 20px;
     height: 20px;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .menu {
@@ -26,14 +31,8 @@ header{
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
     padding: 20px;
-    margin: 0 10px; /* Ajusta a margem para distribuir melhor os itens */
-}
-
-.menu a:hover {
-    background-color: #895b9a;
+    margin: 0 10px; 
 }
 
 /* Estilização menu mobile */
@@ -54,10 +53,37 @@ header{
     font-size: 16pt;
 }
 
-.menu-mobile nav a:hover {
-    background-color:  #895b9a;;
+.menu{
+    width: 50%;
 }
 
+.menu nav a{
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: #895b9a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.menu nav a:hover{
+    color: #ffffff;
+}
 /* Botão Navegação*/
 
 .btn-menu{
@@ -80,39 +106,38 @@ header{
     transform-origin: center;
 }
 
+/* home */
+
 .content {
     display: flex;
-    height: 100vh; /* Faz o conteúdo ocupar a altura total da página */
+    height: 50vh; 
 }
 
 .image-container {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza a imagem */
-}
-
-.img_home {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
+    align-items: center;
+    width: 500px;
+    height: 500px;
+} 
+ 
 .text-container {
     flex: 1;
+    width: 50%;
     background-color: #e0bbff; /* Cor de fundo para metade da página */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o texto verticalmente */
     align-items: center;
-    padding: 20px;
+    padding: 200px;
 }
 
 .text {
-    font-size: 22px;
+    font-size: 30px;
     color: #445283;
     text-align: center;
-    max-width: 600px;
+    max-width: 400px;
 }
 
 .btn {
@@ -135,6 +160,10 @@ header{
     .content {
         flex-direction: column;
     }
+    
+    .mobile {
+        flex-direction: column; 
+    }
 
     /* Esconde o menu tradicional no mobile */
     .menu {
@@ -153,7 +182,8 @@ header{
 
 /* About */
 
-.text-container {
+.container-about {
+    width: 10000;
     display: flex;
     background-color: #e0bbff;
     padding: 48px;
@@ -170,8 +200,8 @@ header{
 }
 
 .image {
-    width: 550px; /* Tamanho da imagem */
-    height: 550px;
+    width: 750px; /* Tamanho da imagem */
+    height: 750px;
     margin-left: 100px; /* Espaçamento entre o texto e a imagem */
 	margin-top: 5px;
 	border: 50px;
@@ -180,12 +210,14 @@ header{
 
 /* Projects */
 
-.containerPROJ {
+.projects {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+
 
 .item {
     background-color: white;
@@ -215,4 +247,99 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/*-------------------------------------------------*/
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.container1{ 
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 25%;
+}
+
+.logo img{
+    width: 200px;
+    cursor: pointer;
+}
+
+
+/* estilização do conteúdo */
+
+section{
+    padding: 90px 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2{
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+#menu-mobile{
+    background-color: #1111119f;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 77px;
+    right: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#menu-mobile nav a{
+    display: block;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#menu-mobile nav a:hover{
+    background-color: #383838;
+}
+
+#btn-menu,
+#btn-menu-close{
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1110px) {
+    .menu,
+    .social{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    #btn-menu,
+    #menu-mobile{
+        display: block;
+    }
+
+    #menu-mobile.active{
+        height: calc(100vh - 77px);
+        visibility: visible;
+    }
 }
