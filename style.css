@@ -11,18 +11,13 @@ body {
 
 .conteiner{
     background-color: #425182;
-    color: white; /* Mudei a cor do texto para branco para que fique legível no fundo escuro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: white; 
     padding: 20px;
 }
 
 .menu {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .menu a {
@@ -37,12 +32,10 @@ body {
 }
 
 /* Estilização menu mobile */
+
 .menu-mobile {
     background-color: #425182;
     backdrop-filter: blur(10px);
-    position: absolute;
-    top: 77;
-    left: 0;
     width: 100%;
     height: 100vh;
     visibility: hidden;
@@ -63,10 +56,9 @@ body {
 /* Botão Navegação*/
 
 .btn-menu{
-    margin-right: -600px;
     width: 60px;
     height: 60px;
-    border: 2px solid white;
+    border: 3px solid white;
     background: transparent;
     cursor: pointer;
     transition: .2s;
@@ -75,10 +67,10 @@ body {
 
 .linha{
     width: 35px;
-    height: 1px;
+    height: 3.5px;
     background-color: white;
     display: block;
-    margin: 10px auto;
+    margin: 10px;
     position: relative;
     transform-origin: center;
 }
@@ -134,7 +126,7 @@ body {
     background-color: #7a4b82;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1020px) {
     .content {
         flex-direction: column;
     }
@@ -144,17 +136,12 @@ body {
         display: none;
     }
 
-    /* Exibe o nav-mobile no mobile */
-    .menu-mobile {
-        display: block;
-    }
-
     .menu-mobile.abrir{
         visibility: visible;
         height: calc(100vh - 77px);
     }
 
-    .btn-menu{
+    #btn-menu{
         display: block;
     }
 }
