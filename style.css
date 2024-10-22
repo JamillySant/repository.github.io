@@ -345,20 +345,16 @@ section p{
 }
 
 /*-------------------------------------------------------------------------------------*/
-
-#contact {
-    padding: 50px 0;
-    text-align: center; /* Centraliza o conteúdo */
-    background-color: #f0f0f0; /* Cor de fundo */
-}
-
 .contact-content {
     margin-top: 20px;
 }
 
 .btn-whatsapp {
+    width: 800px;
+    margin: 0 auto;
     display: inline-block;
     padding: 15px 30px;
+    text-align: center; /* Centraliza o conteúdo */
     font-size: 18px;
     color: white;
     background-color: #25D366; /* Cor verde do WhatsApp */
